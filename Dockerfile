@@ -1,4 +1,4 @@
-FROM archlinux/base
+FROM archlinux
 
 RUN pacman -Syyu base base-devel git --noconfirm
 
