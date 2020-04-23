@@ -30,6 +30,9 @@ RUN yay \
 	texlive-most \
 	inkscape
 
+# Remake tex ls-R
+RUN sudo texhash
+
 WORKDIR /home/docker/input
 
 ENTRYPOINT [ "/bin/bash" ]
